@@ -68,3 +68,4 @@ function showFinalMessage() {
   btn.textContent = "Mulai Lagi";
   btn.onclick = () => window.location.reload();
 }
+   
