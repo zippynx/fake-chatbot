@@ -87,4 +87,4 @@ inputField.addEventListener('input', function () {
 
 window.addEventListener('DOMContentLoaded', () => {
   tampilkanPesan("Eh kok kamu chat aku duluan 😳", 'bot-message');
-});
+}); 
