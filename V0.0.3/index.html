@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fake WA Chat V0.0.3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wa-wrapper">
+    <div class="wa-header">
+      <img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" class="avatar" />
+      <div class="chat-title">
+        <strong>Dopamine❤️</strong><br />
+        <small id="bot-status">online</small>
+      </div>
+    </div>
+
+    <div id="chat-box" class="wa-chat-box"></div>
+
+    <div class="wa-input-container">
+      <textarea id="user-input" placeholder="Ketik pesan" rows="1"></textarea>
+      <button onclick="kirimPesan()">➤</button>
+    </div>
+  </div>
+
+  <script src="bot.js"></script>
+</body>
+</html>
