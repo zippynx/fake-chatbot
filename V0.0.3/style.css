@@ -1,0 +1,126 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #dcdcdc;
+  height: 100%;
+}
+
+.wa-wrapper {
+  max-width: 390px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: #e5ddd5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.wa-header {
+  background: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.wa-chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-image: url('https://i.ibb.co/0j1vY74/wa-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+.message {
+  max-width: 75%;
+  margin: 6px 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+  border-bottom-right-radius: 0;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: white;
+  border-bottom-left-radius: 0;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.timestamp {
+  display: block;
+  font-size: 10px;
+  text-align: right;
+  color: #888;
+  margin-top: 4px;
+}
+
+.check {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #4fc3f7;
+}
+
+.wa-input-container {
+  display: flex;
+  padding: 8px;
+  background: #f0f0f0;
+}
+
+.wa-input-container textarea {
+  flex: 1;
+  resize: none;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.4;
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+.wa-input-container button {
+  margin-left: 8px;
+  background: #25d366;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.wa-input-container button:hover {
+  background: #1ebe5d;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
